@@ -149,7 +149,7 @@ Dalam konteks klasifikasi untuk proyek ini, kita akan menggunakan beberapa metri
 
 4. F1 Score: Harmonic mean dari Precision dan Recall, memberikan keseimbangan antara kedua metrik ini.
 
-  $ \text{F1 Score} = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}} $
+  $$F1 Score = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}} $$
 
 Penjelasan Hasil Proyek Berdasarkan Metrik Evaluasi
 *Logistic Regression*: Memberikan akurasi yang baik, tetapi memiliki recall yang lebih rendah dibandingkan *Random Forest*, yang berarti lebih banyak kasus positif yang terlewatkan.
