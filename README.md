@@ -126,6 +126,31 @@ Berdasarkan hasil parameter terbaik, memilih Random Forest sebagai model terbaik
 
 - Fleksibilitas dalam parameter: Random Forest memberikan fleksibilitas dalam menentukan jumlah pohon (n_estimators) dan bagaimana fitur dipilih (max_features), meskipun ada peringatan untuk mengubah max_features menjadi 'sqrt' dari 'auto' untuk menghindari peringatan masa depan.
 
+<h1> <b> Evaluation </b> </h1>
+<hr>
+Dalam konteks klasifikasi untuk proyek ini, kita akan menggunakan beberapa metrik evaluasi yang umum digunakan:
+
+1. Accuracy (Akurasi): Persentase dari prediksi yang benar secara keseluruhan.
+
+  $Accuracy = \frac{TP + TN}{TP + TN + FP + FN}$.
+
+  - TP: True Positives (prediksi benar positif)
+  - TN: True Negatives (prediksi benar negatif)
+  - FP: False Positives (prediksi salah positif)
+  - FN: False Negatives (prediksi salah negatif)
+
+2. Precision: Persentase dari prediksi positif yang benar.
+  
+  $Precision = \frac{TP}{TP + FP} $
+
+3. Recall (Sensitivity atau True Positive Rate): Persentase dari kasus positif yang berhasil diprediksi.
+  
+  $Recall = \frac{TP}{TP + FN} $
+
+4. F1 Score: Harmonic mean dari Precision dan Recall, memberikan keseimbangan antara kedua metrik ini.
+
+  $ \text{F1 Score} = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}} $
+
 Penjelasan Hasil Proyek Berdasarkan Metrik Evaluasi
 *Logistic Regression*: Memberikan akurasi yang baik, tetapi memiliki recall yang lebih rendah dibandingkan *Random Forest*, yang berarti lebih banyak kasus positif yang terlewatkan.
 
